@@ -1,6 +1,8 @@
 package org.DrugTool.FileManagment;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProductFile {
     FileMaster masterFile = new FileMaster();
@@ -25,7 +27,21 @@ public class ProductFile {
     }
 
     public void deleteProduct(String productName){
-        fileContent = fileContent.replace(productName, "");
+        fileContent = fileContent.replace("\"" + productName + "\",", "");
+    }
+    public List<String> toList(String fileContent){
+        String[] lines = fileContent.split("\\R");
+
+        List<String> productList = new ArrayList<>();
+        for (String line : lines) {
+            String cleaned = line.trim()
+                    .replace(",", "")     // remove comma
+                    .replaceAll("^\"|\"$", ""); // remove leading and trailing quotes
+            if (!cleaned.isEmpty()) {
+                productList.add(cleaned);
+            }
+        }
+        return productList;
     }
 
 }
