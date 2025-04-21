@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 //NOTE Target file is still statically defined
 public class FileMaster {
     public String fileContent;
-
+    private final Path filepath;
     public FileMaster() throws IOException {
         Path baseDir;
 
@@ -25,7 +25,7 @@ public class FileMaster {
         }
 
         Path targetFile = findSaveFile(baseDir, "ProductsTestFile.json");
-
+        filepath = findSaveFile(baseDir, "ProductsTestFile.json");
         if (targetFile == null) {
             throw new IOException("ProductsTestFile.json not found under base directory.");
         }
@@ -33,6 +33,16 @@ public class FileMaster {
         fileContent = Files.readAllLines(targetFile)
                 .stream()
                 .collect(Collectors.joining(System.lineSeparator()));
+    }
+    //Todo: need to have all other classes done to piece everything together
+    public void pushChanges(String gameFormattedDiscoveredProducts) throws IOException {
+        fileContent = "{\n" + "    \"DataType\": \"ProductManagerData\",\n" + "    \"DataVersion\": 0,\n" + "    \"GameVersion\": \"0.3.4f4\"," + gameFormattedDiscoveredProducts;
+        try {
+            Files.write(filepath, fileContent.getBytes());
+            System.out.println("File updated successfully!");
+        } catch (IOException e) {
+            System.out.println("Error was discovered: " + e.getMessage());
+        }
     }
 
     private Path findSaveFile(Path baseDir, String fileName) throws IOException {
