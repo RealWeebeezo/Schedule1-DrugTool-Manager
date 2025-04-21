@@ -7,8 +7,7 @@ import java.util.StringJoiner;
 
 public class ProductFile {
     FileMaster masterFile = new FileMaster();
-    //private String fileContent = masterFile.fileContent;
-    private List<String> fileContent;
+    private final List<String> fileContent;
 
     //Modifies the master file into the necessary Strings by removing everything around it leaving just products
     public ProductFile() throws IOException {
@@ -43,15 +42,15 @@ public class ProductFile {
         }
         return productList;
     }
-    //Re
+
     public String toString(List<String> products){
         StringJoiner joiner = new StringJoiner("\n");
         int tracker = 0;
         for (String product : products) {
             if(tracker != (products.size() - 1)) {
-                joiner.add("\"" + product + "\","); // Adding the quotes and commas
+                joiner.add("        \"" + product + "\","); // Adding the quotes and commas
             } else {
-                joiner.add("\"" + product + "\""); //Makes sure the last product doesn't have the comma
+                joiner.add("        \"" + product + "\""); //Makes sure the last product doesn't have the comma
             }
             tracker++;
         }
@@ -65,18 +64,16 @@ public class ProductFile {
     public List<String> getList(){
         return fileContent;
     }
-    //Makes it simpler to get the format without parameters
-    public String getStringFormat(){
+
+    public String getFormatedListString(){
         return toString(fileContent);
     }
 
     public String getFileContent(int index){
         return fileContent.get(index);
     }
-    //Just adds some of the minor stuff on the ends to make it easier to push to the master file
+
     public String getGameStringFormat(){
         return "\"DiscoveredProducts\": [\n" + (toString(fileContent)) + "\n],";
     }
-
-
 }
