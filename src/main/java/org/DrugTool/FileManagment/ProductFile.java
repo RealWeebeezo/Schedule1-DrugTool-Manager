@@ -17,12 +17,8 @@ public class ProductFile {
         fileContent = toList(masterFile.fileContent.substring(productStart, productFinish));
     }
 
-    public String getFileContent(int index){
-        return fileContent.get(index);
-    }
-
     //As it says it deletes names of products that is unwanted.
-    public void deleteProduct(String productName){
+    public void removeProduct(String productName){
         fileContent.remove(productName);
     }
     //Turns fileContent into a List of string with all and only the products stored in for easy use
@@ -47,13 +43,18 @@ public class ProductFile {
         }
         return productList;
     }
-
+    //Re
     public String toString(List<String> products){
         StringJoiner joiner = new StringJoiner("\n");
+        int tracker = 0;
         for (String product : products) {
-            joiner.add("\"" + product + "\",");
+            if(tracker != (products.size() - 1)) {
+                joiner.add("\"" + product + "\","); // Adding the quotes and commas
+            } else {
+                joiner.add("\"" + product + "\""); //Makes sure the last product doesn't have the comma
+            }
+            tracker++;
         }
-
         return joiner.toString();
     }
 
@@ -64,9 +65,17 @@ public class ProductFile {
     public List<String> getList(){
         return fileContent;
     }
-
-    public String getFormatedListString(){
+    //Makes it simpler to get the format without parameters
+    public String getStringFormat(){
         return toString(fileContent);
+    }
+
+    public String getFileContent(int index){
+        return fileContent.get(index);
+    }
+    //Just adds some of the minor stuff on the ends to make it easier to push to the master file
+    public String getGameStringFormat(){
+        return "\"DiscoveredProducts\": [\n" + (toString(fileContent)) + "\n],";
     }
 
 
