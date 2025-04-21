@@ -1,7 +1,6 @@
 package org.DrugTool;
 
 import org.DrugTool.FileManagment.ProductFile;
-import java.nio.file.Path;
 
 public class Main {
     public static void main(String[] args) {
