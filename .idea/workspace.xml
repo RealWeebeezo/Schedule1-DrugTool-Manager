@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Made it properly turn the list into game format for easy implementation" />
+    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Can now push the changes to the actual file and is correctly formatted">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +31,9 @@
     "accountId": "a8575481-1d59-48bd-a631-f4fc1e241e3d"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
@@ -38,9 +47,10 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "project.structure.last.edited": "Project",
+    "git-widget-placeholder": "master",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager">
@@ -92,7 +102,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745263384392</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I made a oppsie. this is to fix that">
+      <option name="closed" value="true" />
+      <created>1745264048335</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745264048335</updated>
+    </task>
+    <task id="LOCAL-00006" summary="More oppsie fix">
+      <option name="closed" value="true" />
+      <created>1745264133787</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745264133787</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Can now push the changes to the actual file and is correctly formatted">
+      <option name="closed" value="true" />
+      <created>1745268590722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745268590722</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -100,6 +134,9 @@
     <MESSAGE value="Pulled from main to push this into master since I dont know why it wont let me" />
     <MESSAGE value="Idk how this popped up" />
     <MESSAGE value="Made it properly turn the list into game format for easy implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made it properly turn the list into game format for easy implementation" />
+    <MESSAGE value="I made a oppsie. this is to fix that" />
+    <MESSAGE value="More oppsie fix" />
+    <MESSAGE value="Can now push the changes to the actual file and is correctly formatted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can now push the changes to the actual file and is correctly formatted" />
   </component>
 </project>
