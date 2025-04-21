@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Made it properly turn the list into game format for easy implementation" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RealWeebeezo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RealWeebeezo/Schedule1-DrugTool-Manager.git",
+    "accountId": "a8575481-1d59-48bd-a631-f4fc1e241e3d"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2w37TudyuzBID7gYVUs2ZPjRmlQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.DrugTool.Main" />
+      <module name="Schedule1-DrugTool-Manager" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="" />
+      <created>1745258414885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745258414885</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Deleted unused import">
+      <option name="closed" value="true" />
+      <created>1745258448249</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745258448249</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Pulled from main to push this into master since I dont know why it wont let me">
+      <option name="closed" value="true" />
+      <created>1745258756942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745258756942</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Idk how this popped up">
+      <option name="closed" value="true" />
+      <created>1745258924317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745258924317</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made it properly turn the list into game format for easy implementation">
+      <option name="closed" value="true" />
+      <created>1745263384392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745263384392</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Deleted unused import" />
+    <MESSAGE value="Pulled from main to push this into master since I dont know why it wont let me" />
+    <MESSAGE value="Idk how this popped up" />
+    <MESSAGE value="Made it properly turn the list into game format for easy implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made it properly turn the list into game format for easy implementation" />
+  </component>
+</project>
