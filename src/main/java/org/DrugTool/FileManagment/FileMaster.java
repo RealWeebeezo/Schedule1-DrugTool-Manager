@@ -11,7 +11,7 @@ public class FileMaster {
     public FileMaster() throws IOException {
         Path baseDir;
 
-        // Testing Mode Enviroment Variable for my Mac, Ignores automatically for Windows
+        // Testing Mode Environment Variable for my Mac, Ignores automatically for Windows
         String isTestMode = System.getenv("TEST_MODE");
 
         if ("true".equalsIgnoreCase(isTestMode)) {
@@ -24,8 +24,8 @@ public class FileMaster {
                     "AppData", "LocalLow", "TVGS", "Schedule I", "Saves");
         }
 
-        Path targetFile = findSaveFile(baseDir, "ProductsTestFile.json");
-        filepath = findSaveFile(baseDir, "ProductsTestFile.json");
+        Path targetFile = findSaveFile(baseDir);
+        filepath = findSaveFile(baseDir);
         if (targetFile == null) {
             throw new IOException("ProductsTestFile.json not found under base directory.");
         }
@@ -36,7 +36,8 @@ public class FileMaster {
     }
     //Todo: need to have all other classes done to piece everything together
     public void pushChanges(String gameFormattedDiscoveredProducts) throws IOException {
-        fileContent = "{\n" + "    \"DataType\": \"ProductManagerData\",\n" + "    \"DataVersion\": 0,\n" + "    \"GameVersion\": \"0.3.4f4\"," + gameFormattedDiscoveredProducts;
+        fileContent = "{\n" + "    \"DataType\": \"ProductManagerData\",\n" + "    \"DataVersion\": 0,\n" + "    \"GameVersion\": \"0.3.4f4\"," + gameFormattedDiscoveredProducts
+        + "\n    \"ListedProducts\": [],\n    \"ActiveMixOperation\": {\n        \"ProductID\": \"\",\n        \"IngredientID\": \"\"\n    },\n    \"IsMixComplete\": false,\n";
         try {
             Files.write(filepath, fileContent.getBytes());
             System.out.println("File updated successfully!");
@@ -45,10 +46,10 @@ public class FileMaster {
         }
     }
 
-    private Path findSaveFile(Path baseDir, String fileName) throws IOException {
+    private Path findSaveFile(Path baseDir) throws IOException {
         try (var stream = Files.walk(baseDir)) {
             return stream
-                    .filter(p -> p.getFileName().toString().equals(fileName))
+                    .filter(p -> p.getFileName().toString().equals("ProductsTestFile.json"))
                     .findFirst()
                     .orElse(null);
         }

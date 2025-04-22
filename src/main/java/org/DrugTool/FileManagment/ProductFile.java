@@ -74,6 +74,6 @@ public class ProductFile {
     }
 
     public String getGameStringFormat(){
-        return "\"DiscoveredProducts\": [\n" + (toString(fileContent)) + "\n],";
+        return "\"DiscoveredProducts\": [\n" + (toString(fileContent)) + "\n    ],";
     }
 }

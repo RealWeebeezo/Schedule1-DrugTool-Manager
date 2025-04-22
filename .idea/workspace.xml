@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Can now push the changes to the actual file and is correctly formatted">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Fixed some string format issue and added more required info that needed to be imported on the .json.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FileMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FileMaster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" afterDir="false" />
     </list>
@@ -15,6 +14,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,9 +54,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "idea.background.editor": "C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,43,scale,center",
+    "idea.background.frame": "C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,100,scale,middle_left",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager">
@@ -126,7 +135,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745268590722</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Broke something IDK what but it's now fixed. Was giving errors at line 9 about expression, but I made it go bye bye">
+      <option name="closed" value="true" />
+      <created>1745268976622</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745268976622</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Idk what these are but I guess they changed">
+      <option name="closed" value="true" />
+      <created>1745269012011</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745269012011</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added new classes to be worked in the near future.">
+      <option name="closed" value="true" />
+      <created>1745363983601</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745363983601</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -137,6 +170,10 @@
     <MESSAGE value="I made a oppsie. this is to fix that" />
     <MESSAGE value="More oppsie fix" />
     <MESSAGE value="Can now push the changes to the actual file and is correctly formatted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can now push the changes to the actual file and is correctly formatted" />
+    <MESSAGE value="Broke something IDK what but it's now fixed. Was giving errors at line 9 about expression, but I made it go bye bye" />
+    <MESSAGE value="Idk what these are but I guess they changed" />
+    <MESSAGE value="Added new classes to be worked in the near future." />
+    <MESSAGE value="Fixed some string format issue and added more required info that needed to be imported on the .json." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some string format issue and added more required info that needed to be imported on the .json." />
   </component>
 </project>
