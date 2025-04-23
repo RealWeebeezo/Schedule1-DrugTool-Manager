@@ -1,47 +1,24 @@
 package org.DrugTool.FileManagment;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.StringJoiner;
 
 import org.DrugTool.Util.ProductHelperClass;
 
 
-public class ProductFile {
+public class DiscoveredProductsFile {
     FileMaster masterFile = new FileMaster();
     private final List<String> fileContent;
 
     //Modifies the master file into the necessary Strings by removing everything around it leaving just products
-    public ProductFile() throws IOException {
-        fileContent = toList(ProductHelperClass.findWantedContent(masterFile.fileContent, "DiscoveredProducts", "ListedProducts"));
+    public DiscoveredProductsFile() throws IOException {
+        fileContent = ProductHelperClass.toList(ProductHelperClass.findWantedContent(masterFile.fileContent, "DiscoveredProducts", "ListedProducts"), "DiscoveredProducts");
     }
 
     //As it says it deletes names of products that is unwanted.
     public void removeProduct(String productName){
         fileContent.remove(productName);
-    }
-    //Turns fileContent into a List of string with all and only the products stored in for easy use
-    public List<String> toList(String fileContent){
-        //Splits all the newline part of the string and throw it to an arr
-        String[] lines = fileContent.split("\\R");
-
-        List<String> productList = new ArrayList<>();
-        for (String line : lines) {
-            //Remove all parentheses, comas, and spaces for proper clean up
-            String cleaned = line.trim()
-                    .replace(",", "")
-                    .replaceAll("^\"|\"$", "");
-            if (!cleaned.isEmpty()) {
-                productList.add(cleaned);
-            }
-        }
-        //Cleans up the list by removing the title of the list and brackets
-        if (productList.contains("DiscoveredProducts\": [") && productList.contains("]")){
-            productList.remove(productList.size() - 1);
-            productList.remove(0);
-        }
-        return productList;
     }
 
     public String toString(List<String> products){
@@ -75,6 +52,6 @@ public class ProductFile {
     }
 
     public String getGameStringFormat(){
-        return "\"DiscoveredProducts\": [\n" + (toString(fileContent)) + "\n    ],";
+        return "\n    \"DiscoveredProducts\": [\n" + (toString(fileContent)) + "\n    ],";
     }
 }

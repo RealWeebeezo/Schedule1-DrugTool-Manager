@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Fixed some string format issue and added more required info that needed to be imported on the .json.">
+    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Forgot to push this in prev push">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ListedProductsFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FileMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FileMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FavouritedProductsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FavouritedProductsFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/MixRecipesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/MixRecipesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/DiscoveredProductsFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductPriceFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductPriceFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/Util/ProductHelperClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/Util/ProductHelperClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +163,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745363983601</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed some string format issue and added more required info that needed to be imported on the .json.">
+      <option name="closed" value="true" />
+      <created>1745364179303</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745364179303</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Made a helper class (Name isn't official yet) and all it does is find what only needed in the file and returns a string of that">
+      <option name="closed" value="true" />
+      <created>1745366694968</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745366694968</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Forgot to push this in prev push">
+      <option name="closed" value="true" />
+      <created>1745366809623</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745366809623</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -174,6 +202,8 @@
     <MESSAGE value="Idk what these are but I guess they changed" />
     <MESSAGE value="Added new classes to be worked in the near future." />
     <MESSAGE value="Fixed some string format issue and added more required info that needed to be imported on the .json." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some string format issue and added more required info that needed to be imported on the .json." />
+    <MESSAGE value="Made a helper class (Name isn't official yet) and all it does is find what only needed in the file and returns a string of that" />
+    <MESSAGE value="Forgot to push this in prev push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forgot to push this in prev push" />
   </component>
 </project>
