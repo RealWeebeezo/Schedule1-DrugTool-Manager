@@ -2,6 +2,7 @@ package org.DrugTool.Util;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringJoiner;
 
 public class ProductHelperClass {
 
@@ -37,6 +38,25 @@ public class ProductHelperClass {
         }
         return productList;
     }
-
+    //Adds the little bit to the String to make the game happy
+    //NOTE: When filling in file name DO NOT put the Word file in it for Ex.("ProductPrice" NOT "ProductPriceFile")
+    public static String toGameFormatSimple(List<String> fileContent, String fileName){
+        return "\n    \"" + fileName + "\": [\n" + (toGameFormatComplex(fileContent)) + "\n    ],";
+        
+    }
+    
+    public static String toGameFormatComplex(List<String> fileContentList){
+        StringJoiner joiner = new StringJoiner("\n");
+        int tracker = 0;
+        for (String fileContentLists : fileContentList) {
+            if(tracker != (fileContentList.size() - 1)) {
+                joiner.add("        \"" + fileContentLists + "\","); // Adding the quotes and commas
+            } else {
+                joiner.add("        \"" + fileContentLists + "\""); //Makes sure the last product doesn't have the comma
+            }
+            tracker++;
+        }
+        return joiner.toString();
+    }
 
 }
