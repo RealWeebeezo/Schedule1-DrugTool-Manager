@@ -5,15 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringJoiner;
 
+import org.DrugTool.Util.ProductHelperClass;
+
+
 public class ProductFile {
     FileMaster masterFile = new FileMaster();
     private final List<String> fileContent;
 
     //Modifies the master file into the necessary Strings by removing everything around it leaving just products
     public ProductFile() throws IOException {
-        int productStart = masterFile.fileContent.indexOf("DiscoveredProducts");
-        int productFinish = masterFile.fileContent.indexOf("ListedProducts");
-        fileContent = toList(masterFile.fileContent.substring(productStart, productFinish));
+        fileContent = toList(ProductHelperClass.findWantedContent(masterFile.fileContent, "DiscoveredProducts", "ListedProducts"));
     }
 
     //As it says it deletes names of products that is unwanted.
