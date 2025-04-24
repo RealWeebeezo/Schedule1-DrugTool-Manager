@@ -14,5 +14,25 @@ public class FavouritedProductsFile {
     public FavouritedProductsFile() throws IOException {
         fileContent = ProductHelperClass.toList(ProductHelperClass.findWantedContent(masterFile.fileContent, "ProductPrices", "FavouritedProducts"), "ProductPrice");
     }
+
+    public void removeProduct(String productName){
+        fileContent.remove(productName);
+    }
+
+    public int getListSize(){
+        return fileContent.size();
+    }
+
+    public List<String> getList(){
+        return fileContent;
+    }
+
+    public String getFileContent(int index){
+        return fileContent.get(index);
+    }
+
+    public String getGameStringFormat(){
+        return "\n    \"FavouriteProducts\": [\n" + ProductHelperClass.toGameFormatComplex(fileContent) + "\n    ],";
+    }
 }
 
