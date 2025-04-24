@@ -20,7 +20,10 @@ public class ProductHelperClass {
         String[] lines = fileContent.split("\\R");
 
         List<String> productList = new ArrayList<>();
+
+        boolean isMoreComplex = false;
         for (String line : lines) {
+            isMoreComplex = line.contains("{");
             //Remove all parentheses, comas, and spaces for proper clean up
             String cleaned = line.trim()
                     .replace(",", "")
