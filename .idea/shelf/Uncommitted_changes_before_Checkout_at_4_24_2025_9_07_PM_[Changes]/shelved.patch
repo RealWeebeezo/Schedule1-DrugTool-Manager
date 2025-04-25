@@ -1,0 +1,96 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"536f7acf-a007-4248-b90e-fc75c723b574\" name=\"Changes\" comment=\"Forgot to push this in prev push\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ListedProductsFile.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FavouritedProductsFile.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FavouritedProductsFile.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/MixRecipesFile.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/MixRecipesFile.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/DiscoveredProductsFile.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductPriceFile.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductPriceFile.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/Util/ProductHelperClass.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/Util/ProductHelperClass.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"RealWeebeezo\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/RealWeebeezo/Schedule1-DrugTool-Manager.git\",\r\n    \"accountId\": \"a8575481-1d59-48bd-a631-f4fc1e241e3d\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 4\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2w37TudyuzBID7gYVUs2ZPjRmlQ\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"idea.background.editor\": \"C:\\\\Users\\\\Weebeezo\\\\Downloads\\\\BlackScreen.jpg,43,scale,center\",\r\n    \"idea.background.frame\": \"C:\\\\Users\\\\Weebeezo\\\\Downloads\\\\BlackScreen.jpg,100,scale,middle_left\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"preferences.lookFeel\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.DrugTool.Main\" />\r\n      <module name=\"Schedule1-DrugTool-Manager\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"536f7acf-a007-4248-b90e-fc75c723b574\" name=\"Changes\" comment=\"\" />\r\n      <created>1745258414885</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1745258414885</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Deleted unused import\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745258448249</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745258448249</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Pulled from main to push this into master since I dont know why it wont let me\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745258756942</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745258756942</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Idk how this popped up\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745258924317</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745258924317</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Made it properly turn the list into game format for easy implementation\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745263384392</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745263384392</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"I made a oppsie. this is to fix that\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745264048335</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745264048335</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"More oppsie fix\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745264133787</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745264133787</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Can now push the changes to the actual file and is correctly formatted\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745268590722</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745268590722</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Broke something IDK what but it's now fixed. Was giving errors at line 9 about expression, but I made it go bye bye\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745268976622</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745268976622</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Idk what these are but I guess they changed\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745269012011</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745269012011</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Added new classes to be worked in the near future.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745363983601</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745363983601</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Fixed some string format issue and added more required info that needed to be imported on the .json.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745364179303</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745364179303</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Made a helper class (Name isn't official yet) and all it does is find what only needed in the file and returns a string of that\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745366694968</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745366694968</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Forgot to push this in prev push\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745366809623</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745366809623</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"14\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Deleted unused import\" />\r\n    <MESSAGE value=\"Pulled from main to push this into master since I dont know why it wont let me\" />\r\n    <MESSAGE value=\"Idk how this popped up\" />\r\n    <MESSAGE value=\"Made it properly turn the list into game format for easy implementation\" />\r\n    <MESSAGE value=\"I made a oppsie. this is to fix that\" />\r\n    <MESSAGE value=\"More oppsie fix\" />\r\n    <MESSAGE value=\"Can now push the changes to the actual file and is correctly formatted\" />\r\n    <MESSAGE value=\"Broke something IDK what but it's now fixed. Was giving errors at line 9 about expression, but I made it go bye bye\" />\r\n    <MESSAGE value=\"Idk what these are but I guess they changed\" />\r\n    <MESSAGE value=\"Added new classes to be worked in the near future.\" />\r\n    <MESSAGE value=\"Fixed some string format issue and added more required info that needed to be imported on the .json.\" />\r\n    <MESSAGE value=\"Made a helper class (Name isn't official yet) and all it does is find what only needed in the file and returns a string of that\" />\r\n    <MESSAGE value=\"Forgot to push this in prev push\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Forgot to push this in prev push\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 8feffe31dec4588914af1e930ad5d94befee29a0)
++++ b/.idea/workspace.xml	(date 1745553945654)
+@@ -4,16 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Forgot to push this in prev push">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ListedProductsFile.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FavouritedProductsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FavouritedProductsFile.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/MixRecipesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/MixRecipesFile.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/DiscoveredProductsFile.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductPriceFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductPriceFile.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/Util/ProductHelperClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/Util/ProductHelperClass.java" afterDir="false" />
+-    </list>
++    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Forgot to push this in prev push" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -29,43 +20,43 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "RealWeebeezo"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;RealWeebeezo&quot;
+   }
+-}]]></component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/RealWeebeezo/Schedule1-DrugTool-Manager.git",
+-    "accountId": "a8575481-1d59-48bd-a631-f4fc1e241e3d"
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/RealWeebeezo/Schedule1-DrugTool-Manager.git&quot;,
++    &quot;accountId&quot;: &quot;a8575481-1d59-48bd-a631-f4fc1e241e3d&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="ProblemsViewState">
+     <option name="selectedTabId" value="CurrentFile" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 4
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 4
++}</component>
+   <component name="ProjectId" id="2w37TudyuzBID7gYVUs2ZPjRmlQ" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.Main.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "master",
+-    "idea.background.editor": "C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,43,scale,center",
+-    "idea.background.frame": "C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,100,scale,middle_left",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "preferences.lookFeel"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;idea.background.editor&quot;: &quot;C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,43,scale,center&quot;,
++    &quot;idea.background.frame&quot;: &quot;C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,100,scale,middle_left&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="Main" type="Application" factoryName="Application">
+       <option name="MAIN_CLASS_NAME" value="org.DrugTool.Main" />
