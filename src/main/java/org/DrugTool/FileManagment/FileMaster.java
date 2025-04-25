@@ -35,16 +35,7 @@ public class FileMaster {
                 .collect(Collectors.joining(System.lineSeparator()));
     }
     //Todo: need to have all other classes done to piece everything together
-    public void pushChanges(String gameFormattedDiscoveredProducts) throws IOException {
-        fileContent = "{\n" + "    \"DataType\": \"ProductManagerData\",\n" + "    \"DataVersion\": 0,\n" + "    \"GameVersion\": \"0.3.4f4\"," + gameFormattedDiscoveredProducts
-        + "\n    \"ListedProducts\": [],\n    \"ActiveMixOperation\": {\n        \"ProductID\": \"\",\n        \"IngredientID\": \"\"\n    },\n    \"IsMixComplete\": false,\n";
-        try {
-            Files.write(filepath, fileContent.getBytes());
-            System.out.println("File updated successfully!");
-        } catch (IOException e) {
-            System.out.println("Error was discovered: " + e.getMessage());
-        }
-    }
+    //Todo: create save function
 
     private Path findSaveFile(Path baseDir) throws IOException {
         try (var stream = Files.walk(baseDir)) {

@@ -1,0 +1,77 @@
+Index: src/main/java/org/DrugTool/FileManagment/ProductFile.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.DrugTool.FileManagment;\n\nimport java.io.IOException;\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.StringJoiner;\n\npublic class ProductFile {\n    FileMaster masterFile = new FileMaster();\n    private final List<String> fileContent;\n\n    //Modifies the master file into the necessary Strings by removing everything around it leaving just products\n    public ProductFile() throws IOException {\n        int productStart = masterFile.fileContent.indexOf(\"DiscoveredProducts\");\n        int productFinish = masterFile.fileContent.indexOf(\"ListedProducts\");\n        fileContent = toList(masterFile.fileContent.substring(productStart, productFinish));\n    }\n\n    //As it says it deletes names of products that is unwanted.\n    public void removeProduct(String productName){\n        fileContent.remove(productName);\n    }\n    //Turns fileContent into a List of string with all and only the products stored in for easy use\n    public List<String> toList(String fileContent){\n        //Splits all the newline part of the string and throw it to an arr\n        String[] lines = fileContent.split(\"\\\\R\");\n\n        List<String> productList = new ArrayList<>();\n        for (String line : lines) {\n            //Remove all parentheses, comas, and spaces for proper clean up\n            String cleaned = line.trim()\n                    .replace(\",\", \"\")\n                    .replaceAll(\"^\\\"|\\\"$\", \"\");\n            if (!cleaned.isEmpty()) {\n                productList.add(cleaned);\n            }\n        }\n        //Cleans up the list by removing the title of the list and brackets\n        if (productList.contains(\"DiscoveredProducts\\\": [\") && productList.contains(\"]\")){\n            productList.remove(productList.size() - 1);\n            productList.remove(0);\n        }\n        return productList;\n    }\n\n    public String toString(List<String> products){\n        StringJoiner joiner = new StringJoiner(\"\\n\");\n        int tracker = 0;\n        for (String product : products) {\n            if(tracker != (products.size() - 1)) {\n                joiner.add(\"        \\\"\" + product + \"\\\",\"); // Adding the quotes and commas\n            } else {\n                joiner.add(\"        \\\"\" + product + \"\\\"\"); //Makes sure the last product doesn't have the comma\n            }\n            tracker++;\n        }\n        return joiner.toString();\n    }\n\n    public int getListSize(){\n        return fileContent.size();\n    }\n\n    public List<String> getList(){\n        return fileContent;\n    }\n\n    public String getFormatedListString(){\n        return toString(fileContent);\n    }\n\n    public String getFileContent(int index){\n        return fileContent.get(index);\n    }\n\n    public String getGameStringFormat(){\n        return \"\\\"DiscoveredProducts\\\": [\\n\" + (toString(fileContent)) + \"\\n],\";\n    }\n}
+===================================================================
+diff --git a/src/main/java/org/DrugTool/FileManagment/ProductFile.java b/src/main/java/org/DrugTool/FileManagment/ProductFile.java
+--- a/src/main/java/org/DrugTool/FileManagment/ProductFile.java	(revision 7f8dbb929c66896c49bc44efeadc5ca73e94cc33)
++++ b/src/main/java/org/DrugTool/FileManagment/ProductFile.java	(date 1745353213421)
+@@ -9,25 +9,23 @@
+     FileMaster masterFile = new FileMaster();
+     private final List<String> fileContent;
+ 
+-    //Modifies the master file into the necessary Strings by removing everything around it leaving just products
++    // Modifies the master file into the necessary Strings by removing everything around it leaving just products
+     public ProductFile() throws IOException {
+         int productStart = masterFile.fileContent.indexOf("DiscoveredProducts");
+         int productFinish = masterFile.fileContent.indexOf("ListedProducts");
+         fileContent = toList(masterFile.fileContent.substring(productStart, productFinish));
+     }
+ 
+-    //As it says it deletes names of products that is unwanted.
++    // Deletes names of products that are unwanted
+     public void removeProduct(String productName){
+         fileContent.remove(productName);
+     }
+-    //Turns fileContent into a List of string with all and only the products stored in for easy use
++
++    // Turns fileContent into a List of strings with only the products stored
+     public List<String> toList(String fileContent){
+-        //Splits all the newline part of the string and throw it to an arr
+         String[] lines = fileContent.split("\\R");
+-
+         List<String> productList = new ArrayList<>();
+         for (String line : lines) {
+-            //Remove all parentheses, comas, and spaces for proper clean up
+             String cleaned = line.trim()
+                     .replace(",", "")
+                     .replaceAll("^\"|\"$", "");
+@@ -35,8 +33,7 @@
+                 productList.add(cleaned);
+             }
+         }
+-        //Cleans up the list by removing the title of the list and brackets
+-        if (productList.contains("DiscoveredProducts\": [") && productList.contains("]")){
++        if (productList.contains("DiscoveredProducts\": [") && productList.contains("]")) {
+             productList.remove(productList.size() - 1);
+             productList.remove(0);
+         }
+@@ -47,10 +44,10 @@
+         StringJoiner joiner = new StringJoiner("\n");
+         int tracker = 0;
+         for (String product : products) {
+-            if(tracker != (products.size() - 1)) {
+-                joiner.add("        \"" + product + "\","); // Adding the quotes and commas
++            if (tracker != (products.size() - 1)) {
++                joiner.add("        \"" + product + "\",");
+             } else {
+-                joiner.add("        \"" + product + "\""); //Makes sure the last product doesn't have the comma
++                joiner.add("        \"" + product + "\"");
+             }
+             tracker++;
+         }
+@@ -74,6 +71,11 @@
+     }
+ 
+     public String getGameStringFormat(){
+-        return "\"DiscoveredProducts\": [\n" + (toString(fileContent)) + "\n],";
++        return "\"DiscoveredProducts\": [\n" + toString(fileContent) + "\n],";
+     }
+-}
+\ No newline at end of file
++
++    //NEW METHOD: Allows saving without exposing masterFile directly
++    public void saveChanges() throws IOException {
++        masterFile.pushChanges(getGameStringFormat());
++    }
++}

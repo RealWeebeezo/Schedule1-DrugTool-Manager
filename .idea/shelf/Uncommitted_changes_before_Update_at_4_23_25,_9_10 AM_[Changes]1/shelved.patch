@@ -1,0 +1,118 @@
+Index: src/main/java/org/DrugTool/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.DrugTool;\n\nimport org.DrugTool.FileManagment.ProductFile;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            ProductFile productFile = new ProductFile();\n            System.out.print(productFile.getFormatedListString());\n        } catch (Exception e) {\n            System.out.println(\"Error was discovered: \" + e.getMessage());\n            System.exit(1);\n        }\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/DrugTool/Main.java b/src/main/java/org/DrugTool/Main.java
+--- a/src/main/java/org/DrugTool/Main.java	(revision 7f8dbb929c66896c49bc44efeadc5ca73e94cc33)
++++ b/src/main/java/org/DrugTool/Main.java	(date 1745353305528)
+@@ -6,10 +6,20 @@
+     public static void main(String[] args) {
+         try {
+             ProductFile productFile = new ProductFile();
+-            System.out.print(productFile.getFormatedListString());
++
++            // Specify the product you want to remove
++            String productToRemove = "ogkush";
++
++            // Remove the product
++            productFile.removeProduct(productToRemove);
++
++            // Save the updated list to file
++            productFile.saveChanges();
++
++            System.out.println("Removed product: " + productToRemove);
+         } catch (Exception e) {
+             System.out.println("Error was discovered: " + e.getMessage());
+             System.exit(1);
+         }
+     }
+-}
+\ No newline at end of file
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"536f7acf-a007-4248-b90e-fc75c723b574\" name=\"Changes\" comment=\"Can now push the changes to the actual file and is correctly formatted\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/encodings.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\n  \"lastFilter\": {\n    \"state\": \"OPEN\",\n    \"assignee\": \"RealWeebeezo\"\n  }\n}]]></component>\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\n  \"selectedUrlAndAccountId\": {\n    \"url\": \"https://github.com/RealWeebeezo/Schedule1-DrugTool-Manager.git\",\n    \"accountId\": \"a8575481-1d59-48bd-a631-f4fc1e241e3d\"\n  }\n}]]></component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 4\n}]]></component>\n  <component name=\"ProjectId\" id=\"2w37TudyuzBID7gYVUs2ZPjRmlQ\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Application.Main.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"master\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.15\",\n    \"project.structure.side.proportion\": \"0.2\"\n  }\n}]]></component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.DrugTool.Main\" />\n      <module name=\"Schedule1-DrugTool-Manager\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"536f7acf-a007-4248-b90e-fc75c723b574\" name=\"Changes\" comment=\"\" />\n      <created>1745258414885</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1745258414885</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Deleted unused import\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1745258448249</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1745258448249</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Pulled from main to push this into master since I dont know why it wont let me\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1745258756942</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1745258756942</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Idk how this popped up\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1745258924317</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1745258924317</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Made it properly turn the list into game format for easy implementation\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1745263384392</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1745263384392</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"I made a oppsie. this is to fix that\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1745264048335</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1745264048335</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"More oppsie fix\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1745264133787</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1745264133787</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"Can now push the changes to the actual file and is correctly formatted\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1745268590722</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1745268590722</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Deleted unused import\" />\n    <MESSAGE value=\"Pulled from main to push this into master since I dont know why it wont let me\" />\n    <MESSAGE value=\"Idk how this popped up\" />\n    <MESSAGE value=\"Made it properly turn the list into game format for easy implementation\" />\n    <MESSAGE value=\"I made a oppsie. this is to fix that\" />\n    <MESSAGE value=\"More oppsie fix\" />\n    <MESSAGE value=\"Can now push the changes to the actual file and is correctly formatted\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Can now push the changes to the actual file and is correctly formatted\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7f8dbb929c66896c49bc44efeadc5ca73e94cc33)
++++ b/.idea/workspace.xml	(date 1745417421499)
+@@ -5,8 +5,6 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Can now push the changes to the actual file and is correctly formatted">
+-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" afterDir="false" />
+@@ -19,42 +17,45 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "RealWeebeezo"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;RealWeebeezo&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="GithubPullRequestsUISettings"><![CDATA[{
+   "selectedUrlAndAccountId": {
+     "url": "https://github.com/RealWeebeezo/Schedule1-DrugTool-Manager.git",
+-    "accountId": "a8575481-1d59-48bd-a631-f4fc1e241e3d"
++    "accountId": "3a4982fd-d1e8-41d3-928d-51fba11d4619"
+   }
+ }]]></component>
+   <component name="ProblemsViewState">
+     <option name="selectedTabId" value="CurrentFile" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 4
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 4
++}</component>
+   <component name="ProjectId" id="2w37TudyuzBID7gYVUs2ZPjRmlQ" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.Main.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "master",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="Main" type="Application" factoryName="Application">
++      <envs>
++        <env name="TEST_MODE" value="true" />
++      </envs>
+       <option name="MAIN_CLASS_NAME" value="org.DrugTool.Main" />
+       <module name="Schedule1-DrugTool-Manager" />
+       <method v="2">
