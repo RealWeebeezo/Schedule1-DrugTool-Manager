@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Forgot to push this in prev push">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ListedProductsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FavouritedProductsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/FavouritedProductsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/MixRecipesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/MixRecipesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/DiscoveredProductsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductPriceFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/FileManagment/ProductPriceFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/DrugTool/Util/ProductHelperClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/DrugTool/Util/ProductHelperClass.java" afterDir="false" />
-    </list>
+    <list default="true" id="536f7acf-a007-4248-b90e-fc75c723b574" name="Changes" comment="Forgot to push this in prev push" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,43 +20,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RealWeebeezo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RealWeebeezo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RealWeebeezo/Schedule1-DrugTool-Manager.git",
-    "accountId": "a8575481-1d59-48bd-a631-f4fc1e241e3d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RealWeebeezo/Schedule1-DrugTool-Manager.git&quot;,
+    &quot;accountId&quot;: &quot;a8575481-1d59-48bd-a631-f4fc1e241e3d&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2w37TudyuzBID7gYVUs2ZPjRmlQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "idea.background.editor": "C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,43,scale,center",
-    "idea.background.frame": "C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,100,scale,middle_left",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;idea.background.editor&quot;: &quot;C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,43,scale,center&quot;,
+    &quot;idea.background.frame&quot;: &quot;C:\\Users\\Weebeezo\\Downloads\\BlackScreen.jpg,100,scale,middle_left&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.DrugTool.Main" />
