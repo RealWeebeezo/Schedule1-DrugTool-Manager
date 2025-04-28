@@ -9,7 +9,6 @@ import java.util.Set;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import org.DrugTool.FileManagment.FileMaster;
 
 /**
@@ -82,11 +81,32 @@ public class ProductHandler {
 
     /**
      * Removes the product from the internal map (case-insensitive).
-     */
+
     public void removeProduct(String productName) {
         productPriceMap.remove(productName.toLowerCase());
-    }
 
+    }
+    */
+    //Idk man I just used ChatGpt for this. I have no Idea how this jackson stuff fully works yet
+    public void removeProduct(String productName) {
+        JsonNode discoveredNode = rootNode.get("DiscoveredProducts");
+        productPriceMap.remove(productName.toLowerCase());
+        if (discoveredNode != null && discoveredNode.isArray()) {
+            if (rootNode instanceof com.fasterxml.jackson.databind.node.ObjectNode) {
+                var discoveredArray = (com.fasterxml.jackson.databind.node.ArrayNode) discoveredNode;
+
+                for (int i = 0; i < discoveredArray.size(); i++) {
+                    JsonNode productNode = discoveredArray.get(i);
+                    if (productNode.asText().equalsIgnoreCase(productName)) {
+                        discoveredArray.remove(i);
+                        break; // Remove only first match
+                    }
+                }
+            } else {
+                throw new IllegalStateException("Root JSON is not an ObjectNode");
+            }
+        }
+    }
     /**
      * @return the number of products currently loaded
      */
@@ -116,4 +136,34 @@ public class ProductHandler {
             throw new IOException("Failed to serialize MixRecipes JSON", e);
         }
     }
+    //Idk man I just used ChatGpt for this. I have no Idea how this jackson stuff fully works yet
+    private void syncPricesToJson() {
+        // Create a new array node to replace "ProductPrices"
+        var newPricesArray = mapper.createArrayNode();
+
+        // Rebuild the JSON array from productPriceMap
+        for (Map.Entry<String, Integer> entry : productPriceMap.entrySet()) {
+            var productObject = mapper.createObjectNode();
+            productObject.put("String", entry.getKey());
+            productObject.put("Int", entry.getValue());
+            newPricesArray.add(productObject);
+        }
+
+        // Actually replace "ProductPrices" in rootNode
+        if (rootNode instanceof com.fasterxml.jackson.databind.node.ObjectNode) {
+            ((com.fasterxml.jackson.databind.node.ObjectNode) rootNode).set("ProductPrices", newPricesArray);
+        } else {
+            throw new IllegalStateException("Root JSON is not an ObjectNode");
+        }
+    }
+
+
+    public String pushChanges() throws JsonProcessingException {
+        // First, synchronize the Map into the rootNode JSON structure
+        syncPricesToJson();
+
+        // Then, serialize the entire rootNode (which now contains the updated prices)
+        return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(rootNode);
+    }
+
 }
